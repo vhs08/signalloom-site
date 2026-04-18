@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo — Política de Privacidade / Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #333; line-height: 1.7; }
+        .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+        h1 { font-size: 28px; margin-bottom: 8px; color: #111; }
+        .subtitle { font-size: 14px; color: #888; margin-bottom: 40px; }
+        h2 { font-size: 20px; margin-top: 36px; margin-bottom: 12px; color: #222; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+        p { margin-bottom: 14px; font-size: 15px; }
+        ul { margin: 8px 0 14px 24px; font-size: 15px; }
+        li { margin-bottom: 6px; }
+        .lang-toggle { text-align: right; margin-bottom: 24px; }
+        .lang-toggle a { font-size: 13px; color: #555; text-decoration: underline; cursor: pointer; }
+        .section-en { display: none; }
+        strong { color: #222; }
+        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #eee; font-size: 13px; color: #999; }
+        a { color: #2563eb; }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 14px; }
+        th, td { text-align: left; padding: 8px 12px; border: 1px solid #e5e5e5; }
+        th { background: #f5f5f5; font-weight: 600; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="lang-toggle">
+        <a onclick="toggleLang()">English version below / Versão em inglês abaixo</a>
+    </div>
+
+    <!-- ==================== PORTUGUÊS ==================== -->
+    <div id="pt">
+    <h1>Política de Privacidade — Memo</h1>
+    <p class="subtitle">Última atualização: 18 de abril de 2026</p>
+
+    <h2>1. O que é o Memo</h2>
+    <p>O Memo é um assistente pessoal via WhatsApp, operado pela Signalloom ("nós", "nosso"). O Memo recebe mensagens de texto e áudio, organiza suas informações em categorias e envia lembretes proativos. Este serviço está atualmente em fase beta.</p>
+
+    <h2>2. Dados que coletamos</h2>
+    <table>
+        <tr><th>Dado</th><th>Finalidade</th><th>Retenção</th></tr>
+        <tr><td>Número de telefone (WhatsApp)</td><td>Identificação do usuário</td><td>Até exclusão solicitada</td></tr>
+        <tr><td>Nome de exibição (informado por você)</td><td>Personalização das respostas</td><td>Até exclusão solicitada</td></tr>
+        <tr><td>Nome do assistente (informado por você)</td><td>Personalização do Memo</td><td>Até exclusão solicitada</td></tr>
+        <tr><td>Persona escolhida (Focado/Descontraído)</td><td>Tom de comunicação</td><td>Até exclusão solicitada</td></tr>
+        <tr><td>Mensagens de texto enviadas</td><td>Categorização e organização</td><td>Até exclusão solicitada</td></tr>
+        <tr><td>Mensagens de áudio enviadas</td><td>Transcrição e categorização</td><td>Áudio processado em memória, não armazenado. Transcrição armazenada.</td></tr>
+        <tr><td>Metadados (wa_message_id, timestamps)</td><td>Deduplicação e controle</td><td>Até exclusão solicitada</td></tr>
+    </table>
+
+    <h2>3. Como processamos seus dados</h2>
+    <p>Seus dados são processados por serviços de terceiros para funcionar:</p>
+    <ul>
+        <li><strong>Meta (WhatsApp Business API)</strong> — recebimento e envio de mensagens. Política de privacidade: <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank">whatsapp.com/legal/privacy-policy</a></li>
+        <li><strong>OpenAI (Whisper + GPT-4o-mini)</strong> — transcrição de áudio e categorização de mensagens. O áudio é enviado para transcrição e descartado após o processamento. O texto é enviado para categorização. Política: <a href="https://openai.com/policies/privacy-policy" target="_blank">openai.com/policies/privacy-policy</a></li>
+        <li><strong>Anthropic (Claude)</strong> — geração de respostas personalizadas. Seu texto categorizado é enviado para gerar a resposta na persona escolhida. Política: <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a></li>
+        <li><strong>Supabase</strong> — armazenamento de dados (banco de dados PostgreSQL hospedado na AWS, região eu-west). Política: <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></li>
+        <li><strong>Vercel</strong> — hospedagem do servidor (funções serverless). Política: <a href="https://vercel.com/legal/privacy-policy" target="_blank">vercel.com/legal/privacy-policy</a></li>
+    </ul>
+    <p>Nenhum dado é vendido, alugado ou compartilhado para fins de publicidade ou marketing.</p>
+
+    <h2>4. Base legal (GDPR — UK GDPR)</h2>
+    <p>A base legal para o processamento dos seus dados é o <strong>consentimento explícito</strong> (Artigo 6(1)(a) do UK GDPR), dado por você ao iniciar o uso do Memo e aceitar esta política durante o onboarding.</p>
+
+    <h2>5. Seus direitos</h2>
+    <p>Sob o UK GDPR e leis de proteção de dados aplicáveis, você tem os seguintes direitos:</p>
+    <ul>
+        <li><strong>Acesso</strong> — solicitar uma cópia dos seus dados pessoais.</li>
+        <li><strong>Retificação</strong> — corrigir dados incorretos.</li>
+        <li><strong>Exclusão ("direito ao esquecimento")</strong> — solicitar a exclusão de todos os seus dados. Envie "apague meus dados" ao Memo no WhatsApp ou entre em contato conosco.</li>
+        <li><strong>Portabilidade</strong> — receber seus dados em formato estruturado.</li>
+        <li><strong>Retirada do consentimento</strong> — retirar seu consentimento a qualquer momento. Isso não afeta a legalidade do processamento anterior.</li>
+        <li><strong>Reclamação</strong> — apresentar reclamação à autoridade supervisora (ICO no Reino Unido: <a href="https://ico.org.uk" target="_blank">ico.org.uk</a>).</li>
+    </ul>
+    <p>Para exercer qualquer direito, envie "apague meus dados" no WhatsApp ou escreva para: <strong>vhs08@icloud.com</strong></p>
+
+    <h2>6. Segurança</h2>
+    <p>Empregamos medidas técnicas para proteger seus dados, incluindo comunicação criptografada (HTTPS/TLS), armazenamento em banco de dados com acesso restrito e processamento de áudio em memória (sem armazenamento permanente do arquivo de áudio).</p>
+
+    <h2>7. Transferência internacional de dados</h2>
+    <p>Seus dados podem ser processados fora do Reino Unido por nossos provedores de serviço (OpenAI e Anthropic nos EUA, Supabase na AWS EU). Essas transferências são protegidas por cláusulas contratuais padrão e/ou decisões de adequação conforme aplicável.</p>
+
+    <h2>8. Menores</h2>
+    <p>O Memo não é destinado a menores de 16 anos. Se tomarmos conhecimento de que dados de menor foram coletados, excluiremos prontamente.</p>
+
+    <h2>9. Alterações nesta política</h2>
+    <p>Podemos atualizar esta política periodicamente. Alterações significativas serão comunicadas via WhatsApp. A data de atualização no topo reflete a versão vigente.</p>
+
+    <h2>10. Contato</h2>
+    <p>Signalloom<br>
+    E-mail: <a href="mailto:vhs08@icloud.com">vhs08@icloud.com</a><br>
+    Responsável pelo tratamento de dados: Victor Souza</p>
+    </div>
+
+    <!-- ==================== ENGLISH ==================== -->
+    <div id="en" class="section-en">
+    <h1>Privacy Policy — Memo</h1>
+    <p class="subtitle">Last updated: 18 April 2026</p>
+
+    <h2>1. What is Memo</h2>
+    <p>Memo is a personal assistant on WhatsApp, operated by Signalloom ("we", "us", "our"). Memo receives text and audio messages, organises your information into categories, and sends proactive reminders. This service is currently in beta.</p>
+
+    <h2>2. Data we collect</h2>
+    <table>
+        <tr><th>Data</th><th>Purpose</th><th>Retention</th></tr>
+        <tr><td>Phone number (WhatsApp)</td><td>User identification</td><td>Until deletion requested</td></tr>
+        <tr><td>Display name (provided by you)</td><td>Response personalisation</td><td>Until deletion requested</td></tr>
+        <tr><td>Assistant name (provided by you)</td><td>Memo personalisation</td><td>Until deletion requested</td></tr>
+        <tr><td>Chosen persona (Focused/Casual)</td><td>Communication tone</td><td>Until deletion requested</td></tr>
+        <tr><td>Text messages sent</td><td>Categorisation and organisation</td><td>Until deletion requested</td></tr>
+        <tr><td>Audio messages sent</td><td>Transcription and categorisation</td><td>Audio processed in memory, not stored. Transcription is stored.</td></tr>
+        <tr><td>Metadata (wa_message_id, timestamps)</td><td>Deduplication and control</td><td>Until deletion requested</td></tr>
+    </table>
+
+    <h2>3. How we process your data</h2>
+    <p>Your data is processed by the following third-party services:</p>
+    <ul>
+        <li><strong>Meta (WhatsApp Business API)</strong> — message delivery and receipt. Privacy policy: <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank">whatsapp.com/legal/privacy-policy</a></li>
+        <li><strong>OpenAI (Whisper + GPT-4o-mini)</strong> — audio transcription and message categorisation. Audio is sent for transcription and discarded after processing. Text is sent for categorisation. Policy: <a href="https://openai.com/policies/privacy-policy" target="_blank">openai.com/policies/privacy-policy</a></li>
+        <li><strong>Anthropic (Claude)</strong> — personalised response generation. Your categorised text is sent to generate the response in your chosen persona. Policy: <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a></li>
+        <li><strong>Supabase</strong> — data storage (PostgreSQL database hosted on AWS, eu-west region). Policy: <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></li>
+        <li><strong>Vercel</strong> — server hosting (serverless functions). Policy: <a href="https://vercel.com/legal/privacy-policy" target="_blank">vercel.com/legal/privacy-policy</a></li>
+    </ul>
+    <p>No data is sold, rented, or shared for advertising or marketing purposes.</p>
+
+    <h2>4. Legal basis (UK GDPR)</h2>
+    <p>The legal basis for processing your data is <strong>explicit consent</strong> (Article 6(1)(a) of UK GDPR), given by you when starting to use Memo and accepting this policy during onboarding.</p>
+
+    <h2>5. Your rights</h2>
+    <p>Under UK GDPR and applicable data protection laws, you have the following rights:</p>
+    <ul>
+        <li><strong>Access</strong> — request a copy of your personal data.</li>
+        <li><strong>Rectification</strong> — correct inaccurate data.</li>
+        <li><strong>Erasure ("right to be forgotten")</strong> — request deletion of all your data. Send "delete my data" to Memo on WhatsApp or contact us directly.</li>
+        <li><strong>Portability</strong> — receive your data in a structured format.</li>
+        <li><strong>Withdraw consent</strong> — withdraw your consent at any time. This does not affect the lawfulness of prior processing.</li>
+        <li><strong>Complaint</strong> — lodge a complaint with the supervisory authority (ICO in the UK: <a href="https://ico.org.uk" target="_blank">ico.org.uk</a>).</li>
+    </ul>
+    <p>To exercise any right, send "delete my data" on WhatsApp or write to: <strong>vhs08@icloud.com</strong></p>
+
+    <h2>6. Security</h2>
+    <p>We employ technical measures to protect your data, including encrypted communication (HTTPS/TLS), database storage with restricted access, and in-memory audio processing (no permanent audio file storage).</p>
+
+    <h2>7. International data transfers</h2>
+    <p>Your data may be processed outside the United Kingdom by our service providers (OpenAI and Anthropic in the US, Supabase on AWS EU). These transfers are protected by standard contractual clauses and/or adequacy decisions as applicable.</p>
+
+    <h2>8. Children</h2>
+    <p>Memo is not intended for children under 16. If we become aware that data from a minor has been collected, we will promptly delete it.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this policy periodically. Significant changes will be communicated via WhatsApp. The update date at the top reflects the current version.</p>
+
+    <h2>10. Contact</h2>
+    <p>Signalloom<br>
+    Email: <a href="mailto:vhs08@icloud.com">vhs08@icloud.com</a><br>
+    Data controller: Victor Souza</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Signalloom. Memo é um produto da Signalloom.</p>
+    </div>
+
+</div>
+
+<script>
+function toggleLang() {
+    const pt = document.getElementById('pt');
+    const en = document.getElementById('en');
+    if (en.style.display === 'none' || en.style.display === '') {
+        en.style.display = 'block';
+        pt.style.display = 'none';
+    } else {
+        en.style.display = 'none';
+        pt.style.display = 'block';
+    }
+}
+</script>
+</body>
+</html>
